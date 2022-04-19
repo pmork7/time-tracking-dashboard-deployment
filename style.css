@@ -43,8 +43,8 @@ body {
 .dashboard {
   display: grid;
   margin: auto;
-  grid-template-rows: [row1-start] 13em [row1-end row2-start] 13em [row2-end];
-  grid-template-columns: repeat(4, 13em);
+  grid-template-rows: [row1-start] 12em [row1-end row2-start] 12em [row2-end];
+  grid-template-columns: repeat(4, 11.5em);
   gap: 1em;
 }
 
@@ -69,12 +69,12 @@ body {
   display: block;
   border-radius: 1em;
   padding: 1em;
-  padding-bottom: 1.8em;
+  padding-bottom: 0;
   padding-left: 1.8em;
   background-color: var(--dark-blue);
   color: white;
   z-index: 0;
-  height: 8em;
+  height: 8.9em;
   margin-bottom: -1em;
   cursor: pointer;
 }
@@ -82,6 +82,7 @@ body {
 @media only screen and (max-width: 375px) {
   .card {
     height: 5em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -98,7 +99,7 @@ body {
 }
 
 .card > h2 {
-  font-size: 1em;
+  font-size: 0.9rem;
   font-weight: 500;
   opacity: 0.9;
   width: 5em;
@@ -106,8 +107,8 @@ body {
 
 .hours {
   display: block;
-  font-size: 3em;
-  padding-top: 0.5em;
+  font-size: 2.9rem;
+  padding-top: 0.8em;
   padding-bottom: 0.1em;
   font-weight: 300;
   opacity: 0.9;
@@ -115,7 +116,7 @@ body {
 
 .prev {
   color: var(--pale-blue);
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
   opacity: 0.9;
 }
@@ -124,12 +125,13 @@ body {
   .hours {
     font-size: 2em;
     float: left;
+    padding-top: 0.3em;
   }
 
   .prev {
     float: right;
     position: relative;
-    top: 2.5em;
+    top: 2em;
   }
 }
 
@@ -257,9 +259,11 @@ body {
 }
 
 .top-card > img {
+  margin-top: 1em;
+  margin-left: 0.8em;
   border: .2em solid white;
   border-radius: 5em;
-  height: 4em;
+  height: 3.3em;
 }
 
 .top-card-content {
@@ -288,6 +292,8 @@ body {
   }
 
   .top-card > img {
+    margin-top: 0;
+    margin-left: 0;
     float: left;
     height: 3.5em;
   }
@@ -338,7 +344,7 @@ body {
 .buttons-list > button {
   font-family: "Rubik";
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1rem;
   float: left;
   padding-left: 1em;
   width: 10em;
